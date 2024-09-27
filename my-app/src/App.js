@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Products from './ProductList/Products';
-import Footer from './footer/Footer';
-import Navigation from './navigationBar/Navigation';
+import Products from './components/ProductList/Products';
+import Footer from './components/footer/Footer';
+import Navigation from './components/navigationBar/Navigation';
 // import Navigation from './navigationBar/Nnpm i @headlessui/reactnavigation';
 // import defaultExport from 'module'
 

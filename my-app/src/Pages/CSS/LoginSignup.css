@@ -16,6 +16,7 @@
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
+
     max-width: 400px;
   }
   
@@ -27,6 +28,23 @@
   
   /* Input fields container */
   .login-signup-fields {
+=======
+    height: 90vh;
+    background: #fce3fe;
+    padding-top: 50px;
+}
+.loginsignup-container{
+    width: 450px;
+    height: 450px;
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+}
+.loginsignup-container h1{
+    margin: 20px 0px;
+}
+.loginsignup-fields{
+
     display: flex;
     flex-direction: column;
   }

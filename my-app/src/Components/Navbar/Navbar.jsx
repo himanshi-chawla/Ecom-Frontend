@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useState } from "react";
+import { Fragment, useContext, useState } from "react";
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
 import {
@@ -23,6 +23,8 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { ShopContext } from "../../Context/ShopContext";
+
 
 const navigation = {
   categories: [
@@ -156,6 +158,7 @@ const navigation = {
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
+  const {getTotalCartItems}=useContext(ShopContext)
 
   return (
     <div className="bg-white">
@@ -489,9 +492,9 @@ export default function Navigation() {
                       aria-hidden="true"
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                     /></Link>
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
-                    </span>
+                     <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+      {getTotalCartItems()}
+    </span>
                     <span className="sr-only">items in cart, view bag</span>
                   </Link>
                 </div>

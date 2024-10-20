@@ -1,0 +1,24 @@
+.breadcrum {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .breadcrumb-arrow {
+    margin: 0 8px;
+  }
+  
+  .breadcrum span {
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .breadcrum {
+      font-size: 14px;
+    }
+  
+    .breadcrumb-arrow {
+      margin: 0 4px;
+    }
+  }
+  

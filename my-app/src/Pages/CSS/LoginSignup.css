@@ -28,10 +28,10 @@
   
   /* Input fields container */
   .login-signup-fields {
-=======
     height: 90vh;
     background: #fce3fe;
     padding-top: 50px;
+    height: 300px;
 }
 .loginsignup-container{
     width: 450px;

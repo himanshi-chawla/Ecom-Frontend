@@ -35,11 +35,7 @@ npm install
 
 3. Run the app:
 
-
-
-npm run dev   # If using Vite
-# OR
-npm start     # If using Create React App
+npm start
 
 Folder Structure
 
@@ -47,7 +43,7 @@ src/
 ├── assets/
 ├── components/
 ├── pages/
-├── data/          # Mock product data
+├── data/     
 ├── App.jsx
 └── main.jsx
 
